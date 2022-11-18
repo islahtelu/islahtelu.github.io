@@ -1,0 +1,35 @@
+@font-face {
+  font-family: SF Pro Display;
+  src: url(font/SF-Pro-Display-Medium.otf);
+}
+
+.jumbotron {
+  size: 1000;
+  padding: 19rem;
+  background-color: #fff;
+}
+
+section {
+  padding: 5rem;
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+.navbar-scrolled {
+  background: #ffc107;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  color: white;
+  font-size: larger;
+  text-align: center;
+}
+
+.bi {
+  color: white;
+}
