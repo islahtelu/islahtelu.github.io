@@ -10,7 +10,7 @@
     />
     <meta name="keywords" content="ISLAH, Al Fath, TelU" />
     <meta name="author" content="LDK Al Fath Telkom University" />
-    <link rel="icon" href="img/icon.ico" type="image" />
+    <link rel="icon" href="img/icon.png" type="image" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -49,49 +49,6 @@
       </div>
     </nav>
     <!-- Akhir Navbar -->
-
-    <script>
-      // const scriptURL = "https://script.google.com/macros/s/AKfycbzjtBADhCZtH-y3-gXn9uwaJv3i1D0l52DEW1-9MXUIk74Lr-K0iGn3vbjjmuhyELNexg/exec";
-      // const form = document.forms["submit-to-google-sheet"];
-
-      // form.addEventListener("submit", (e) => {
-      //   e.preventDefault();
-      //   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      //     .then((response) => console.log("Success!", response))
-      //     .catch((error) => console.error("Error!", error.message));
-      // });
-
-      const navEl = document.querySelector(".navbar");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY >= 56) {
-          navEl.classList.add("navbar-scrolled");
-        } else if (window.scrollY < 56) {
-          navEl.classList.remove("navbar-scrolled");
-        }
-      });
-
-      var acara = new Date("Nov 26, 2022 11:00:00").getTime();
-      var x = setInterval(function () {
-        var hariini = new Date().getTime();
-        var jarak = acara - hariini;
-
-        var hari = Math.floor(jarak / (1000 * 60 * 60 * 24));
-        var jam = Math.floor((jarak % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var menit = Math.floor((jarak % (1000 * 60 * 60)) / (1000 * 60));
-        var detik = Math.floor((jarak % (1000 * 60)) / 1000);
-
-        document.getElementById("hari").innerHTML = hari;
-        document.getElementById("jam").innerHTML = jam;
-        document.getElementById("menit").innerHTML = menit;
-        document.getElementById("detik").innerHTML = detik;
-
-        if (jarak < 0) {
-          clearInterval(x);
-          document.getElementById("clock").innerHTML = "Selesai";
-        }
-      }, 1000);
-    </script>
 
     <!-- Jumbotron -->
     <section class="jumbotron d-flex align-items-center justify-content-center" style="background-image: url(img/main.webp)">
@@ -301,7 +258,7 @@
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" required></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
               </div>
               <button type="submit" class="btn btn-warning text-white">Kirim</button>
             </form>
@@ -340,5 +297,8 @@
     <!-- Akhir Sosmed -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/js/cf.js"></script>
+    <script src="/js/countdown.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>
