@@ -4,14 +4,14 @@
 }
 
 .jumbotron {
-  background-size: cover;
-  padding: 19rem 5rem;
+  height: 100vh;
+  padding: 5rem;
+  padding-top: 10rem;
   background-color: #fff;
 }
 
 section {
   padding: 5rem;
-  padding-left: 2;
 }
 
 .navbar {
