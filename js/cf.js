@@ -29,7 +29,7 @@ form.addEventListener("submit", (e) => {
       saklar();
       alertContactSuccess.classList.toggle("d-none");
       // Usage!
-      sleep(4000).then(() => {
+      sleep(3000).then(() => {
         alertContactSuccess.classList.toggle("d-none");
       });
       form.reset();
