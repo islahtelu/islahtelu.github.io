@@ -1,7 +1,7 @@
-const countDown = document.getElementById("countdown");
+const countDown = document.querySelector(".countdown");
 const preTest = document.querySelector(".pre-test");
 
-var acara = new Date("Nov 26, 2022 11:00:00").getTime();
+var acara = new Date("Nov 20, 2022 11:00:00").getTime();
 var x = setInterval(function () {
   var hariini = new Date().getTime();
   var jarak = acara - hariini;
@@ -18,7 +18,7 @@ var x = setInterval(function () {
 
   if (jarak < 0) {
     clearInterval(x);
-    document.getElementById("text-countdown").innerHTML = "Big Class 3 is Live Now!";
+    document.querySelector(".text-countdown").innerHTML = "Big Class 3 is Live Now!";
     countDown.classList.toggle("d-none");
     preTest.classList.toggle("d-none");
   }
