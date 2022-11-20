@@ -211,21 +211,21 @@
     <!-- Quotes -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active ">
           <img src="img/carou1.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-content" style="margin-bottom: -3.5rem; margin-left: -20rem; margin-right: 30rem; align-content: center">
+          <div class="carousel-content justify-content-center text-center">
             <p>“Setiap kalian adalah pemimpin, dan setiap pemimpin akan dimintai pertanggung jawaban atas apa yang dipimpinnya”<br />- HR. Bukhari Muslim</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/carou2.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-content" style="margin-bottom: -1rem; margin-left: -12rem">
+          <div class="carousel-content text-center">
             <p>"Hidup boleh stress, tapi jangan lupa nanjung."</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/carou3.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-content" style="margin-bottom: -3rem; margin-left: -8rem">
+          <div class="carousel-content">
             <p>"Tidur, Makan, Apex, Repeat"<br />- Ismael</p>
           </div>
         </div>
@@ -251,16 +251,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none alert-contact-success fixed-top" role="alert">
+              Pesan anda sudah sudah terkirim. Tapi GoFood belum. Sekian terima Dana dan GoPay
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show d-none alert-contact-failed fixed-top" role="alert">
+              Pesan anda gagal terkirim. Perlu GoFood. Sekian terima Dana dan GoPay
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <form name="submit-to-google-sheet">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama" required />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="Pesan" required></textarea>
               </div>
-              <button type="submit" class="btn btn-warning text-white">Kirim</button>
+              <button type="submit" class="btn btn-warning text-white btn-kirim">Kirim</button>
+              <button class="btn btn-warning btn-loading text-white d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
