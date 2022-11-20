@@ -49,6 +49,10 @@ section {
     height: 1000px;
   }
 
+  .carousel-content {
+    top: 22%;
+  }
+
   .pre-test {
     position: sticky;
     z-index: 100;
