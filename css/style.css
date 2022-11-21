@@ -1,15 +1,17 @@
 @font-face {
+  font-family: SF Pro Display Light;
+  src: url(../font/SF-Pro-Display-Ultralight.otf) format("opentype");
+
   font-family: SF Pro Display Medium;
   src: url(../font/SF-Pro-Display-Medium.otf) format("opentype");
 
-  font-family: SF Pro Display Ultra Bold;
-  src: url(../font/SF-Pro-Display-Black.otf) format("opentype");
+  font-family: SF Pro Display Bold;
+  src: url(../font/SF-Pro-Display-Semibold.otf) format("opentype");
 }
 
 .jumbotron {
   height: 100vh;
   padding: 5rem;
-  padding-top: 10rem;
 }
 
 section {
