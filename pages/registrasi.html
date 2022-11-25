@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- untuk SEO -->
     <meta
       name="description"
       content="Acara tahunan yang diadakan oleh Lembaga Dakwah Kampus (LDK) Al-Fath Universitas Telkom yang bertujuan untuk mendidik para kader Islam melalui penguatan aspek-aspek dasar seperti pengetahuan, kepemimpinan, dan iman."
@@ -11,20 +12,22 @@
     <meta name="keywords" content="ISLAH, Al Fath, TelU" />
     <meta name="author" content="LDK Al Fath Telkom University" />
     <link rel="icon" href="../img/icon.png" type="image" />
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/registrasi.js"></script>
     <script src="../js/jurusan.js"></script>
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <title>Registrasi ISLAH 20xx</title>
   </head>
   <body style="font-family: SF Pro Display Medium" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #847de1">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../index.html">
           <img src="../img/islah.webp" width="68" height="24" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,12 +62,15 @@
             <p>Wah wah, pasti kalian udah gak sabar mau ikut ISLAH ya? Langsung isi form di bawah ygy</p>
           </div>
         </div>
+        <!-- alert -->
         <div class="row justify-content-center">
           <div class="col-md-6">
+            <!-- alert ketika berhasil -->
             <div class="alert alert-success alert-dismissible fade show d-none alert-contact-success text-center fixed-top" role="alert">
               Pesan anda sudah sudah terkirim. Tapi GoFood belum. Sekian terima Dana dan GoPay.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+            <!-- alert ketika gagal atau ada kesalahan teknis -->
             <div class="alert alert-danger alert-dismissible fade show d-none alert-contact-failed text-center fixed-top" role="alert">
               Pesan anda gagal terkirim. Perlu GoFood. Sekian terima Dana dan GoPay.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -75,16 +81,35 @@
                 <input type="email" class="form-control" id="name" aria-describedby="name" name="Email" required />
                 <div class="invalid-feedback">Masukkan email yang valid.</div>
               </div>
+              <!-- form Nama Lengkap -->
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama" required />
                 <div class="invalid-feedback">Form nama jangan dikosongkan.</div>
               </div>
+              <!-- form NIM -->
               <div class="mb-3">
                 <label for="nim" class="form-label">NIM</label>
                 <input type="number" class="form-control" id="name" aria-describedby="name" name="NIM" required />
                 <div class="invalid-feedback">Form NIM jangan dikosongkan.</div>
               </div>
+              <!-- radio Jenis Kelamin -->
+              <div class="mb-3">
+                <label for="validationKelamin" class="form-label">Jenis Kelamin</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="jeniskelamin" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Laki-laki
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="jeniskelamin" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Perempuan
+                  </label>
+                </div>
+              </div>
+              <!-- form fakultas -->
               <div class="mb-3">
                 <label for="validationFakultas" class="form-label">Fakultas</label>
                 <select class="form-select" id="validationFakultas" size="1" required>
@@ -92,6 +117,7 @@
                 </select>
                 <div class="invalid-feedback">Mohon pilih salah satu fakultas.</div>
               </div>
+              <!-- form jurusan -->
               <div class="mb-3">
                 <label for="jurusan" class="form-label">Jurusan</label>
                 <select class="form-select" id="validationJurusan" size="1" required>
@@ -99,8 +125,44 @@
                 </select>
                 <div class="invalid-feedback">Mohon pilih salah satu jurusan.</div>
               </div>
+              <!-- radio button angkatan -->
               <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
+                <label for="nim" class="form-label">Angkatan</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="angkatan" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    2020
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="angkatan" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    2021
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="angkatan" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    2022
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="angkatan" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    2023
+                  </label>
+                </div>
+                <div class="invalid-feedback">Pilih satu.</div>
+              </div>
+              <!-- form Nomor HP -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Nomor Handphone (WhatsApp)</label>
+                <input type="number" class="form-control" id="name" aria-describedby="name" name="Nomor" required />
+                <div class="invalid-feedback">Masukkan nomor handphone yang valid.</div>
+              </div>
+              <!-- form Alasan mengikuti ISLAH -->
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Alasan kamu mengikuti ISLAH</label>
                 <textarea class="form-control" id="pesan" rows="3" name="Pesan" required></textarea>
               </div>
               <button type="submit" class="btn btn-warning text-white btn-kirim">Kirim</button>
