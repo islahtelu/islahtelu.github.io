@@ -1,7 +1,7 @@
 const countDown = document.querySelector(".countdown");
 const preTest = document.querySelector(".pre-test");
 
-var acara = new Date("Nov 26, 2022 19:30:00").getTime();
+var acara = new Date("Dec 11, 2022 08:30:00").getTime();
 var x = setInterval(function () {
   var hariini = new Date().getTime();
   var jarak = acara - hariini;
