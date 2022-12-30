@@ -18,7 +18,7 @@ var x = setInterval(function () {
 
   if (jarak < 0) {
     clearInterval(x);
-    document.querySelector(".text-countdown").innerHTML = "Big Class 3 is Live Now!";
+    document.querySelector(".text-countdown").innerHTML = "ISLAH 2022 telah selesai!";
     countDown.classList.toggle("d-none");
     preTest.classList.toggle("d-none");
   }
